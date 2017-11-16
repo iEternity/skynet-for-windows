@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>E439935D-B2A2-46AE-856D-2AA408428F33</ProjectGuid>
+    <!--$guid1$-->
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="examples\" />
+    <Folder Include="examples\login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="examples\abort.lua" />
+    <Compile Include="examples\agent.lua" />
+    <Compile Include="examples\checkdeadloop.lua" />
+    <Compile Include="examples\client.lua" />
+    <Compile Include="examples\cluster1.lua" />
+    <Compile Include="examples\cluster2.lua" />
+    <Compile Include="examples\clustername.lua" />
+    <Compile Include="examples\globallog.lua" />
+    <Compile Include="examples\injectlaunch.lua" />
+    <Compile Include="examples\login\client.lua" />
+    <Compile Include="examples\login\gated.lua" />
+    <Compile Include="examples\login\logind.lua" />
+    <Compile Include="examples\login\main.lua" />
+    <Compile Include="examples\login\msgagent.lua" />
+    <Compile Include="examples\main.lua" />
+    <Compile Include="examples\main_log.lua" />
+    <Compile Include="examples\main_mysql.lua" />
+    <Compile Include="examples\preload.lua" />
+    <Compile Include="examples\proto.lua" />
+    <Compile Include="examples\protoloader.lua" />
+    <Compile Include="examples\share.lua" />
+    <Compile Include="examples\simpledb.lua" />
+    <Compile Include="examples\simplemonitor.lua" />
+    <Compile Include="examples\simpleweb.lua" />
+    <Compile Include="examples\userlog.lua" />
+    <Compile Include="examples\watchdog.lua" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="examples\config" />
+    <Content Include="examples\config.c1" />
+    <Content Include="examples\config.c2" />
+    <Content Include="examples\config.login" />
+    <Content Include="examples\config.mc" />
+    <Content Include="examples\config.mysql" />
+    <Content Include="examples\config.path" />
+    <Content Include="examples\config.userlog" />
+    <Content Include="examples\config_log" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

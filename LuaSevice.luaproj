@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>E439935D-B2A2-46AE-856D-2AA408428F33</ProjectGuid>
+    <!--$guid1$-->
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="service\bootstrap.lua" />
+    <Compile Include="service\cdummy.lua" />
+    <Compile Include="service\clusterd.lua" />
+    <Compile Include="service\clusterproxy.lua" />
+    <Compile Include="service\cmaster.lua" />
+    <Compile Include="service\cmemory.lua" />
+    <Compile Include="service\console.lua" />
+    <Compile Include="service\cslave.lua" />
+    <Compile Include="service\datacenterd.lua" />
+    <Compile Include="service\dbg.lua" />
+    <Compile Include="service\debug_agent.lua" />
+    <Compile Include="service\debug_console.lua" />
+    <Compile Include="service\gate.lua" />
+    <Compile Include="service\launcher.lua" />
+    <Compile Include="service\multicastd.lua" />
+    <Compile Include="service\service_cell.lua" />
+    <Compile Include="service\service_mgr.lua" />
+    <Compile Include="service\service_provider.lua" />
+    <Compile Include="service\sharedatad.lua" />
+    <Compile Include="service\snaxd.lua" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
